@@ -1,0 +1,65 @@
+@import "../../styles/Styles.css";
+.container {
+  display: flex;
+  margin: auto;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+  padding: var(--container-mobile);
+}
+.bg {
+  background-color: #f5f6fb;
+  height: 275px;
+  width: 100vw;
+  position: absolute;
+  z-index: -1;
+  border-bottom-left-radius: 120px;
+}
+.cabbages,
+.moreCabbages {
+  display: none;
+}
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .bg {
+    height: 503px;
+  }
+  .position_cabbages {
+    width: 704px;
+    height: 80px;
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+  }
+  .cabbages {
+    display: block;
+    background-image: url("../../img/background/two-cabbages.png");
+    position: absolute;
+    bottom: -38px;
+    right: 40px;
+    z-index: -1;
+    width: 183px;
+    height: 142px;
+  }
+  .container {
+    padding: var(--container-report-tablet);
+  }
+}
+@media screen and (min-width: 1280px) {
+  .container {
+    padding: var(--container-report-desktop);
+  }
+  .bg {
+    height: 503px;
+  }
+  .moreCabbages {
+    display: block;
+    background-image: url("../../img/background/cabbage-background-bottom.png");
+    background-size: 99%;
+    position: absolute;
+    bottom: -300px;
+    left: 0px;
+    z-index: -1;
+    width: 100vw;
+    height: 232px;
+  }
+}

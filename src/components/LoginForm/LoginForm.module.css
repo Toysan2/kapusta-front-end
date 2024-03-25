@@ -1,0 +1,483 @@
+* {
+  box-sizing: border-box;
+}
+
+.loginformLogo {
+  position: relative;
+  margin-top: 10%;
+  margin-left: 10%;
+  margin-bottom: 10%;
+}
+
+.errorMessage1  {
+  color: #EB5757;
+  width: 90%;
+  text-align: start;
+  font-size: 10px;
+  /* padding-top: 5px; */
+  position: absolute;
+  bottom: 40%;
+  left: 15%;
+  /* transform: translateY(100%); */
+}
+
+.errorMessage2  {
+  color: #EB5757;
+  width: 90%;
+  text-align: start;
+  font-size: 10px;
+  /* padding-top: 5px; */
+  position: absolute;
+  top: 80%;
+  left: 15%;
+  /* transform: translateY(100%); */
+}
+
+.errorStar {
+  color: #EB5757;
+}
+
+.googleBtnText{
+  font-weight: 600;
+  color: black;
+  font-size: 14px;
+}
+
+.google_btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+.container {
+  display: block;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin-top: 10%;
+  padding: 0%;
+  margin: 0;
+  gap: 20%;
+}
+
+.formContainer{
+  width: 350px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: auto;
+  background-color: #FFFFFF;
+  padding: 20px;
+  border-radius: 30px;
+  height: auto;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 40px;
+  min-height: 350px; /* Ustawienie minimalnej wysokości */
+  position: relative; /* Konieczne dla pozycjonowania komunikatu błędu */
+}
+
+.form {
+  width: 80%;
+  color: black;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  
+}
+
+.firstText {
+  text-align: center;
+}
+
+.secondText {
+  width: 90%;
+}
+
+.titles {
+  width: 80%;
+  display: flex;
+  /* justify-content: left; */
+  align-items: center;
+  font-size: small;
+  font-weight: 600;
+  font-size: 12px;
+  color: black;
+  text-align: left;
+  margin-top: 20px;
+  padding: 5px 20px;
+}
+
+.inputs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  border: 0;
+  background-color: #F6F7FB;
+  height: 52px;
+  border-radius: 26px;
+  padding-left: 20px;
+  margin-top: 20px;
+  border: unset;
+  outline: none;
+}
+
+.googleLogin {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  width: 122px;
+  height: 40px;
+  padding: 10px 15px;
+  border-radius: 20px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+  background-color: #F6F7FB;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.googleLogin a {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #52555F;
+}
+
+
+.buttons {
+  justify-content: center;
+  display: flex;
+  /* justify-content: space-between; */
+  width: 90%;
+  gap: 30px;
+  margin: 20px;
+}
+.submitButton {
+  border: none;
+  height: 44px;
+  width: 130px;
+  padding: 5px 10px;
+  border-radius: 16px;
+  background-color: #f5f6fb;
+  font-weight: 600;
+  color: #52555F;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+/* } */
+
+
+
+@media (min-width: 768px) {
+  .buttons {
+    justify-content: center;
+    margin: 32px 0 0 100px;
+    gap: 15px;
+  }
+
+  .formContainer{
+    width: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: auto;
+    background-color: #FFFFFF;
+    padding: 20px;
+    border-radius: 30px;
+    height: auto;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+  }
+
+  .form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 350px;
+    padding: 20px;
+    border-radius: 30px;
+    /* margin-bottom: 40px; */
+    
+  }
+  .firstText {
+    text-align: center;
+  }
+  
+  .titles {
+    font-size: small;
+    font-weight: 400;
+    width: 100%;
+    text-align: left;
+    margin-top: 20px;
+  }
+  
+  .inputs {
+    border: 0;
+    width: 240px;
+    height: 52px;
+    width: 90%;
+    border-radius: 26px;
+    padding-left: 20px;
+    margin-top: 20px;
+  }
+  
+  .googleLogin {
+    width: 122px;
+    height: 40px;
+    padding: 10px 15px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0px 20px 0px;
+  }
+  
+  .googleLogin a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+  }
+  
+  
+  .buttons {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 20px;
+    margin: 30px 0px;
+  }
+  .submitButton {
+    border: unset;
+    height: 44px;
+    width: 130px;
+    border-radius: 16px;
+    font-weight: 600;
+    margin-top: 20px;
+  }
+
+  .container {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    width: 350px;
+    position: relative;
+    margin: auto;
+    margin-top: 10%;
+  }
+
+  .loginformLogo {
+    position: relative;
+    margin-top: 10%;
+    margin-left: 5%;
+    margin-bottom: 10%;
+  }
+
+  .errorMessage1  {
+    color: #EB5757;
+    width: 90%;
+    text-align: start;
+    font-size: 10px;
+    /* padding-top: 5px; */
+    position: absolute;
+    bottom: 46%;
+    left: 20%;
+    /* transform: translateY(100%); */
+  }
+  
+  .errorMessage2  {
+    color: #EB5757;
+    width: 90%;
+    text-align: start;
+    font-size: 10px;
+    /* padding-top: 5px; */
+    position: absolute;
+    top: 72%;
+    left: 20%;
+    /* transform: translateY(100%); */
+  }
+
+}
+@media (min-width: 1280px) {
+  /* * {
+    margin: 0;
+    padding: 0;
+  } */
+
+  /* .container {
+    display: flex;
+    justify-content: space-between;
+    gap: 10%;
+    position: relative;
+    flex-direction: unset;
+    right: 15%;
+    margin-top: 5%;
+
+  } */
+
+  .loginformLogo {
+    position: relative;
+    top: 5%;
+    right: 10%;
+  }
+
+  /* .homepage {
+    display: flex;
+    gap: 20%;
+  } */
+  
+
+
+  /* .container {
+    width: 450px;
+    position: relative;
+    margin: auto;
+  } */
+
+  /* .buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin-top: 20px;
+    margin: 30px 0;
+  } */
+  .container {
+    display: flex;
+    flex-direction: unset;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin: auto;
+    right: 0;
+    margin-top: 5%;
+  }
+  
+  /* .formContainer{
+    width: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: auto;
+    background-color: #FFFFFF;
+    padding: 20px;
+    border-radius: 30px;
+    height: auto;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+  } */
+  
+  /* .form {
+    width: 100%;
+    color: black;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    
+  }
+  
+  .firstText {
+  
+    text-align: center;
+  }
+  
+
+  
+  
+  
+  .googleLogin {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 122px;
+    height: 40px;
+    padding: 10px 15px;
+    border-radius: 20px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    margin: 20px 0px 20px 0px;
+    margin-top: 20px;
+  }
+  
+  .googleLogin a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #52555F;
+  }
+  
+  
+  .buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 20px;
+  }
+  .submitButton {
+    border: none;
+    gap: 30px;
+    height: 44px;
+    width: 130px;
+    border-radius: 16px;
+    background-color: #f5f6fb;
+    font-weight: 600;
+    color: #52555F;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+  } */
+
+
+  
+  .errorMessage1  {
+    color: #EB5757;
+    width: 90%;
+    text-align: start;
+    font-size: 10px;
+    /* padding-top: 5px; */
+    position: absolute;
+    bottom: 46%;
+    left: 15%;
+    /* transform: translateY(100%); */
+  }
+  
+  .errorMessage2  {
+    color: #EB5757;
+    width: 90%;
+    text-align: start;
+    font-size: 10px;
+    /* padding-top: 5px; */
+    position: absolute;
+    top: 72%;
+    left: 15%;
+    /* transform: translateY(100%); */
+  }
+
+
+  .titles {
+    font-size: 12px;
+    font-weight: 600;
+    color: black;
+    text-align: left;
+    margin-top: 20px;
+  }
+
+
+  .submitButton:hover,
+  .submitButton:focus {
+    background-color: var(--brand-color);
+    color: #f5f6fb;
+  }
+
+}
+
+
