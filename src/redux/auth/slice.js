@@ -1,5 +1,4 @@
 import { createSlice } from "@reduxjs/toolkit";
-// import { add } from "date-fns";
 import {
   register,
   logIn,
@@ -19,6 +18,18 @@ const initialState = {
 const authSlice = createSlice({
   name: "auth",
   initialState,
+  reducers: {
+    login: (state, action) => {
+      state.token = action.payload;
+      state.isLoggedIn = true;
+      localStorage.setItem("isLoggedIn", true); // Add this line
+    },
+    logout: (state) => {
+      state.token = null;
+      state.isLoggedIn = false;
+      localStorage.removeItem("isLoggedIn"); // Add this line
+    },
+  },
   extraReducers: (builder) => {
     builder
       .addCase(register.fulfilled, (state, action) => {
@@ -30,8 +41,6 @@ const authSlice = createSlice({
         state.user = action.payload.user;
         state.token = action.payload.user.token;
         state.isLoggedIn = true;
-        console.log(state.token);
-        console.log(state.user);
       })
       .addCase(googleLogIn.fulfilled, (state, action) => {
         state.user = action.payload.user;
@@ -61,4 +70,6 @@ const authSlice = createSlice({
   },
 });
 
-export const authReducer = authSlice.reducer;
+export const { login, logout } = authSlice.actions;
+
+export default authSlice.reducer;

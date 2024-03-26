@@ -1,7 +1,7 @@
 import { configureStore } from "@reduxjs/toolkit";
 import { transactionsReducer } from "./transactions/transactionsSlice";
 import storage from "redux-persist/lib/storage";
-import { authReducer } from "./auth/slice";
+import { default as authReducer } from "./auth/slice";
 import { reportsReducer } from "./reports/reportsSlice";
 import {
   persistReducer,
