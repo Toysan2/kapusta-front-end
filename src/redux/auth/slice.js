@@ -7,7 +7,7 @@ import {
   setBalance,
   googleLogIn,
 } from "./operations";
-import { history } from "../utils/history";
+import { history } from "../../utils/history";
 
 const initialState = {
   user: { email: null, balance: null, avatarUrl: null },
