@@ -7,12 +7,3 @@ export const selectIsRefreshing = (state) => state.auth.isRefreshing;
 export const selectToken = (state) => state.auth.token;
 
 export const selectBalance = (state) => state.auth.user.balance;
-
-export const login = (token) => ({
-  type: "LOGIN",
-  payload: token,
-});
-
-export const logout = () => ({
-  type: "LOGOUT",
-});

@@ -5,6 +5,10 @@ function setAuthorizationToken(token) {
   axios.defaults.headers.common.Authorization = `Bearer ${token}`;
 }
 
+function clearAuthorizationToken() {
+  axios.defaults.headers.common.Authorization = "";
+}
+
 export const fetchUserInfo = createAsyncThunk(
   "user/fetchUserInfo",
   async (_, thunkAPI) => {
